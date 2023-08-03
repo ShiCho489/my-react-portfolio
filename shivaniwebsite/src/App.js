@@ -6,6 +6,7 @@ import github from "./assets/github.png"
 import linkedin from "./assets/lnk.png";
 import twitter from "./assets/twitter.png";
 import Social from "./components/Social/Social";
+import Projects from "./Pages/Projects/Projects";
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
 
         </div>
         <div className="page" id="projects">
-         <Project />
+         <Projects />
         </div>
       </div>
     </main>
