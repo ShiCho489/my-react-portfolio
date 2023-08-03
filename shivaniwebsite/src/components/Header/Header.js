@@ -1,7 +1,42 @@
+import { useEffect } from 'react'
 import './Header.scss';
 import logo from "../../assets/image4.webp";
+import profile from "../../assets/img3.jpeg";
 
 const Header = () => {
+    useEffect(() => {
+        const navLinks = document.querySelectorAll("nav ul li");
+        const indicator = document.querySelector("nav .indicator");
+    
+        function update() {
+          let width = navLinks[0].offsetWidth;
+          let left = navLinks[0].offsetLeft;
+    
+          indicator.style.width = `${width + 28}px`;
+          indicator.style.left = left + "px";
+        }
+        update();
+    
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+            });
+    
+            let width = link.offsetWidth;
+            let left = link.offsetLeft;
+    
+            indicator.style.left = left + "px";
+            indicator.style.width = `${width + 28}px`;
+    
+            link.classList.add("active");
+          });
+        });
+    
+        window.addEventListener("resize", update());
+      }, []);
+    
+
   return (
     <header>
       
@@ -26,6 +61,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <div className="profile">
+       <img src= {profile} alt="" />
+      </div>
 </div>
       
 
