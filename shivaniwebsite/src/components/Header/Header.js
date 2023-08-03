@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import './Header.scss';
 import logo from "../../assets/image4.webp";
-import profile from "../../assets/img3.jpeg";
+import profile from "../../assets/img1.jpeg";
 
 const Header = () => {
     useEffect(() => {
