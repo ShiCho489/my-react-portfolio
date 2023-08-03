@@ -42,7 +42,7 @@ const Header = () => {
       
 <div className= "logo">
     <img src={logo} alt="" />
-    <h1> <i>Shivani Website</i></h1>
+    <h1> <i>Shivani Choudhary</i></h1>
        <nav>
         <ul>
           <div className="indicator"></div>
