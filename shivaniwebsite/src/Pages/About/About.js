@@ -27,7 +27,7 @@ const About = () => {
              back-end development, and database management."
              />
              <InfoCard title="Skills"
-             details="HTML/CSS | JAVASCRIPT | REACT | NEXT.JS | NODE.JS | SQL | MONGODB | JEST | C# | DOTNET | PYTHON | AZURE | ROBOTIC FRAMEWORK | GITHUB ACTIONS | DOCKER & KUBERNETES "
+             details="HTML/CSS | JAVASCRIPT | REACT | NEXT.JS | NODE.JS | SQL | MONGODB | JEST | C# | DOTNET | PYTHON | AZURE | ROBOTIC FRAMEWORK | GITHUB ACTIONS | DOCKER & KUBERNETES  "
              />
              
             </div>
